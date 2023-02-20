@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "P.E.C website",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "P.E.C website"
+	}
+}
