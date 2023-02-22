@@ -10,14 +10,15 @@
     <script src="https://kit.fontawesome.com/6a6fe3d180.js" crossorigin="anonymous"></script>
 </head>
 <body class="flex flex-col">
-    <header class="w-full bg-lightwheat mb-5 h-fit bg-center bg-cover bg-no-repeat
-    flex flex-col" >
-        <nav class="nav  h-20 flex justify-between bg-stone-300">
+    <header class="w-full bg-stone-300 mb-5 h-fit flex flex-col" >
+        <nav class="nav w-full  h-20 flex justify-between bg-stone-300">
             <figure class="logo w-20">
-                <img src="pics/PEC-logo.jpeg" alt="" class="w-full rounded">
+                <a href="index.html"><img src="pics/PEC-logo.jpeg" alt="" class="w-full rounded"></a>
             </figure>
-             <ul class="flex justify-between py-1 px-3 h-fit w-4/5 
+             <ul id="nav-list2" class="navBar sm:flex hidden justify-between py-1 px-3 h-fit w-4/5 
                 font-semibold text-white">
+                <button id="exitMenuBtn" onclick="closeMenu()" class="exitMenuBtn text-3xl bg-stone-800 rounded border border-wheat font-bold text-wheat w-fit py-2 px-3 absolute
+             top-0 right-1 hover:bg-stone-900 sm:hidden md:hidden hover:animate-ping">X</button>
                 <li class="ml-3 bg-gray-900 text-center w-40 h-fit px-2 rounded hover:text-gray-500 cursor-pointer hover:transition-all
                  hover:underline-offset-4"><a href="index.html">Home</a></li>
                 <!-- <li class="ml-3 bg-gray-900 text-center w-40 h-fit px-2 rounded hover:text-gray-500 cursor-pointer hover:transition-all
@@ -31,29 +32,35 @@
                 <li class="ml-3 bg-gray-900 text-center w-40 h-fit px-2 rounded hover:text-gray-500 cursor-pointer hover:transition-all
                  hover:underline-offset-4"><a href="#">F.A.Q</a></li>
             </ul>
+            <div id="Harmburger-menu-services" onclick="openMenu()" class="MenuBtn flex p-2 md:hidden sm:block hover:animate-pulse hover:bg-milk">
+                <i class="fa-solid fa-bars text-3xl cursor-pointer ease-in-out duration-300
+                hover:animate-pulse"></i>
+        
+               </div>
         </nav>
             
         
     </header>
     <section class="hero flex flex-col">
         <P class="ServicesHero m-auto text-center
-            font-bold h-40 text-4xl text-pink-600 my-4 ">We offer world class in-school
+            font-semibold sm:font-bold h-40 text-2xl sm:text-4xl text-pink-600 my-4 ">We offer world class in-school
             <span class="text-cyan-600">mentorship</span> and top tier <span class="text-cyan-500">tutolage</span> on the following 
             subjects
         </P>
-        <ul class="subjects-offered flex bg-lightwheat m-auto">
+        <ul class="subjects-offered grid grid-cols-3 gap-3 sm:flex sm:flex-nowrap bg-lightwheat m-auto
+        w-full">
             
-            <li class="px-3 h-full hover:underline hover:-translate-y-1 font-semibold w-fit text-xl text-stone-700 text-center my-auto 
-            border-r-2 border-gray-300"><a href="#">(I.C.T) <span class="text-sm">Information/Communication Technology</span> </a></li>
-            <li class="px-3 h-full hover:underline hover:-translate-y-1 font-semibold w-fit text-xl text-stone-700 text-center my-auto 
+            <li class="px-3 border-b-2 pb-2 h-full hover:underline hover:-translate-y-1 font-semibold sm:w-fit sm:text-xl text-stone-700 text-center my-auto 
+            border-r-2 border-gray-300"><a href="#">(I.C.T) <span class="hidden sm:flex text-sm">Information/Communication Technology</span> </a></li>
+            <li class="px-3 border-b-2 pb-2 h-full hover:underline hover:-translate-y-1 font-semibold sm:w-fit sm:text-xl text-stone-700 text-center my-auto 
             border-r-2 border-gray-300"><a href="#">Diction</a></li>
-            <li class="px-3 h-full hover:underline hover:-translate-y-1 font-semibold w-fit text-xl text-stone-700 text-center my-auto 
+            <li class="px-3 border-b-2 pb-2 h-full hover:underline hover:-translate-y-1 font-semibold sm:w-fit sm:text-xl text-stone-700 text-center my-auto 
              border-r-2 border-gray-300"><a href="#">Chess</a></li>
-            <li class="px-3 h-full hover:underline hover:-translate-y-1 font-semibold w-fit text-xl text-stone-700 text-center my-auto 
+            <li class="px-3 pb-2 h-full hover:underline hover:-translate-y-1 font-semibold sm:w-fit sm:text-xl text-stone-700 text-center my-auto 
             border-r-2 border-gray-300 "><a href="#">Music</a></li>
-            <li class="px-3 h-full hover:underline hover:-translate-y-1 font-semibold w-fit text-lg text-stone-700 text-center my-auto 
+            <li class="px-3 pb-2 h-full text-sm hover:underline hover:-translate-y-1 font-semibold sm:w-fit sm:text-lg text-stone-700 text-center my-auto 
             border-r-2 border-gray-300"><a href="#">International Languages</a></li>
-            <li class="px-3 h-full hover:underline hover:-translate-y-1 font-semibold w-fit text-lg text-stone-700 text-center my-auto 
+            <li class="px-3 pb-2 h-full hover:underline hover:-translate-y-1 font-semibold sm:w-fit text-sm sm:text-lg text-stone-700 text-center my-auto 
             "><a href="#">Arts and Crafts</a></li>
             
         </ul>
@@ -61,36 +68,36 @@
     <section class="services flex flex-col my-4 border-x-0 border-y border-gray-400">
         
         <div class="diction px-2 py-5 flex flex-col"> 
-            <figure class="flex justify-between">
+            <figure class="sm:flex-row flex flex-col justify-between">
                 <figcaption class="max-w-lg bg-gray-300 m-auto text-blue-900">
                     <div class="flex justify-between w-3/6 bg-white pr-2">
                         <h3 class="font-semibold bg-white rounded text-2xl px-2 py-1 text-rebeccapurple w-32">DICTION</h3>
-                        <i class="relative -top-6 fa-solid fa-spell-check text-5xl my-auto text-stone-800"></i>
+                        <i class="relative -top-4 sm:-top-6 fa-solid fa-spell-check text-3xl sm:text-5xl my-auto text-stone-800"></i>
                     </div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Facilis, nemo dolorem adipisci suscipit ratione 
                     voluptatem vero aliquam exercitationem optio fuga!
                 </figcaption>
                 <img src="pics/ladder shelf.jpg" alt="" class="w-60 h-100 rounded-tl-none
-                 rounded-br-none rounded-xl">
+                 rounded-br-none rounded-xl m-auto">
             </figure>
-            <ul class="flex justify-between w-3/5 list-disc pl-2 m-auto">
-                <li class="font-semibold hover:text-blue-700 hover:-translate-y-1"><a href="#">Syllabus</a></li>
-                <li class="font-semibold hover:text-blue-700 hover:-translate-y-1"><a href="#">Tools/Equipments</a></li>
-                <li class="font-semibold hover:text-blue-700 hover:-translate-y-1"><a href="#">Teaching Mode</a></li>
+            <ul class="flex justify-between w-full sm:w-3/5 text-sm sm:text-lg list-disc pl-2 m-auto">
+                <li class="font-semibold hover:text-blue-700 sm:hover:-translate-y-1"><a href="#">Syllabus</a></li>
+                <li class="font-semibold hover:text-blue-700 sm:hover:-translate-y-1"><a href="#">Tools/Equipments</a></li>
+                <li class="font-semibold hover:text-blue-700 sm:hover:-translate-y-1"><a href="#">Teaching Mode</a></li>
             </ul>
 
         </div>
-        <div class="I-C-T px-2 bg-gray-700 py-5"> 
-            <figure class="flex justify-between">
+        <div class="I-C-T px-2 flex flex-col bg-gray-700 py-5"> 
+            <figure class="flex flex-col sm:flex-row justify-between">
                 <img src="pics/code kid.jpg" alt="" class="w-60 h-100 rounded-tl-none
-                 rounded-br-none rounded-3xl">
-                <figcaption class="max-w-xl bg-gray-300 m-auto text-blue-900">
+                 rounded-br-none rounded-3xl m-auto">
+                <figcaption class="max-w-xl my-2 bg-gray-300 m-auto text-blue-900">
                    <div class="flex w-fit justify-between bg-white">
-                     <h3 class="font-semibold bg-white rounded text-2xl px-2 py-1
+                     <h3 class="font-semibold bg-white rounded text-lg sm:text-2xl px-2 py-1
                      text-rebeccapurple w-fit">INFORMATION COMMUNICATION TECH</h3>
-                     <i class="fa-solid fa-ethernet text-5xl m-auto text-stone-800 visible
-                     relative -top-6"></i>
+                     <i class="fa-solid fa-ethernet text-3xl sm:text-5xl m-auto text-stone-800 visible
+                     relative -top-4 sm:-top-6"></i>
                    </div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Facilis, nemo dolorem adipisci suscipit ratione 
@@ -98,53 +105,53 @@
                 </figcaption>
                 
             </figure>
-            <ul class="flex justify-between  w-3/5 m-auto relative left-24 list-disc pl-2 ">
+            <ul class="flex text-sm sm:text-lg justify-between w-full sm:w-3/5 m-auto relative sm:left-24 list-disc pl-2 ">
                 <li class="font-semibold hover:text-blue-300 text-gray-300 hover:-translate-y-1"><a href="ICT-syllabus.html">Syllabus</a></li>
                 <li class="font-semibold hover:text-blue-300 text-gray-300 hover:-translate-y-1"><a href="#">Tools/Equipments</a></li>
                 <li class="font-semibold hover:text-blue-300 text-gray-300 hover:-translate-y-1"><a href="#">Teaching Mode</a></li>
             </ul>
         </div>
         <div class="Chess px-2 py-5 flex flex-col"> 
-            <figure class="flex justify-between">
+            <figure class="flex flex-col sm:flex-row justify-between">
                 <figcaption class="max-w-lg bg-gray-300 m-auto text-blue-900">
                     <div class="flex justify-between w-4/6 bg-white pr-2">
                         <h3 class="font-semibold bg-white rounded text-2xl px-2 py-1 text-rebeccapurple w-32">CHESS</h3>
-                        <i class="relative -top-6 fa-solid fa-chess text-5xl text-stone-800"></i>
+                        <i class="relative sm:-top-6 -top-4 fa-solid fa-chess text-3xl sm:text-5xl text-stone-800"></i>
                     </div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Facilis, nemo dolorem adipisci suscipit ratione 
                     voluptatem vero aliquam exercitationem optio fuga!
                 </figcaption>
                 <img src="pics/chess girl.jpg" alt="" class="w-60 h-100 rounded-tl-none
-                 rounded-br-none rounded-xl">
+                 rounded-br-none rounded-xl m-auto my-2">
             </figure>
-            <ul class="flex justify-between w-3/5 list-disc pl-2 m-auto ">
+            <ul class="flex justify-between w-full text-sm sm:text-lg sm:w-3/5 list-disc pl-2 m-auto ">
                 <li class="font-semibold hover:text-blue-700 hover:-translate-y-1"><a href="#">Syllabus</a></li>
                 <li class="font-semibold hover:text-blue-700 hover:-translate-y-1"><a href="#">Tools/Equipments</a></li>
                 <li class="font-semibold hover:text-blue-700 hover:-translate-y-1"><a href="#">Teaching Mode</a></li>
             </ul>
         </div>
         <div class="Int-Languages px-2 bg-gray-700 py-5 flex flex-col"> 
-            <figure class="flex justify-between">
+            <figure class="flex flex-col sm:flex-row justify-between">
                 <img src="pics/mic.jpg" alt="" class="w-60 h-100 rounded-tl-none
-                 rounded-br-none rounded-3xl">
-                <figcaption class="max-w-lg bg-gray-300 m-auto text-blue-900">
+                 rounded-br-none rounded-3xl m-auto">
+                <figcaption class="max-w-lg bg-gray-300 m-auto my-2 text-blue-900">
                     <div class="flex justify-between bg-white pr-2">
-                        <h3 class="font-semibold bg-white rounded text-2xl px-2 py-1
+                        <h3 class="font-semibold bg-white rounded text-lg sm:text-2xl px-2 py-1
                      text-rebeccapurple w-fit">INTERNATIONAL LANGUAGES</h3>
-                     <i class="relative -top-6 fa-solid fa-language text-5xl text-stone-800"></i>
+                     <i class="relative sm:-top-6 -top-4 fa-solid fa-language text-3xl sm:text-5xl text-stone-800"></i>
                     </div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Facilis, nemo dolorem adipisci suscipit ratione 
                     voluptatem vero aliquam exercitationem optio fuga!
                 </figcaption>
             </figure>
-            <ul class="flex justify-between relative left-28 m-auto w-3/5 list-disc pl-2 ">
+            <ul class="flex justify-between text-sm sm:text-lg relative sm:left-28 m-auto w-full sm:w-3/5 list-disc pl-2 ">
                 <li class="font-semibold text-gray-300 hover:text-blue-300 hover:-translate-y-1"><a href="#">Syllabus</a></li>
                 <li class="font-semibold text-gray-300 hover:text-blue-300 hover:-translate-y-1"><a href="#">Tools/Equipments</a></li>
                 <li class="font-semibold text-gray-300 hover:text-blue-300 hover:-translate-y-1"><a href="#">Teaching Mode</a></li>
             </ul>
-            <ul class="languages m-auto flex relative left-36 -top-20 justify-between my-3">
+            <ul class="languages m-auto text-sm sm:text-lg sm:flex grid grid-cols-2 gap-2 relative sm:left-36 sm:-top-20 justify-between my-3">
                 <li class="mx-4 font-semibold text-wheat hover:underline hover:cursor-pointer
                 hover:-translate-y-1 hover:text-milk border-r px-4 border-gray-300">Spanish</li>
                 <li class="mx-4 font-semibold text-wheat hover:underline hover:cursor-pointer
@@ -159,10 +166,10 @@
 
        <!-- Footer area -->
        <footer class="">
-        <div class="testimonials my-5">
+        <div class="testimonials my-5 flex flex-col">
             <h4 class="font-semibold text-lg mx-2 ">Here's what some of our users and partners have to say.</h4>
-            <div class="testimonies flex">
-                <div class=" textifier border-r text-center bg-white mx-1 shadow-lg py-2 border-r-slate-200 
+            <div class="testimonies flex flex-col sm:flex-row m-auto">
+                <div class=" textifier sm:border-r text-center w-2/3 mx-auto bg-white my-1 sm:mx-1 shadow-lg py-2 border-r-slate-200 
                 hover:bg-milk hover:cursor-pointer transition-all">
                     <figure class="flex px-2 justify-between">
                         <img src="pics/mic.jpg" class="w-10 rounded-full" alt="image of blog author">
@@ -173,7 +180,7 @@
                     </p>
                     <h4 class="left-16 relative font-semibold">John Rhon</h4>
                 </div>
-                <div class="border-r text-center bg-white mx-1 shadow-lg py-2 border-r-slate-200 
+                <div class="sm:border-r text-center w-2/3 mx-auto bg-white my-1 sm:mx-1 shadow-lg py-2 border-r-slate-200 
                 hover:bg-milk hover:cursor-pointer transition-all">
                     <figure class="flex px-2 justify-between">
                         <img src="pics/mic.jpg" class="w-10 rounded-full" alt="image of blog author">
@@ -184,7 +191,7 @@
                     </p>
                     <h4 class="left-16 relative font-semibold">John Rhon</h4>
                 </div>
-                <div class="border-r text-center bg-white mx-1 shadow-lg py-2 border-r-slate-200 
+                <div class="sm:border-r text-center w-2/3 m-auto bg-white my-1 mx-auto sm:mx-1 shadow-lg py-2 border-r-slate-200 
                 hover:bg-milk hover:cursor-pointer transition-all">
                     <figure class="flex px-2 justify-between">
                         <img src="pics/mic.jpg" class="w-10 rounded-full" alt="image of blog author">
@@ -197,14 +204,14 @@
                 </div>
             </div>
         </div>
-        <div class="contact-us flex flex-col  justify-between mb-4">
-            <h3 class="m-auto mb-3 font-semibold">Contact Us</h3>
+        <div class="contact-us flex flex-col w-full  justify-between mb-4">
+            <h3 class="sm:m-auto pr-2 mb-3 font-semibold">Contact Us</h3>
             <div class="contact flex justify-between  w-5/6 m-auto">
-                <ul class="w-4/6 m-auto text-sm font-semibold">
+                <ul class="sm:w-4/6  w-5/6 m-auto text-sm font-semibold">
                     <li class="flex"><a href="#"><i class="fa-solid fa-envelope"></i>:<span class="font-light"> PhronemaEduConsults@gmail.com</span></a></li>
                     <li class="flex"><a href="#"><i class="fa-solid fa-phone"></i>:<span class="font-light"> 08030001000, 09012345678</span></a></li>
                 </ul>
-                <ul class="socials flex flex-col w-2/5 text-slate-500 text-sm 
+                <ul class="socials flex flex-col w-1/6 sm:w-2/5 text-slate-500 text-sm 
                  hover:cursor-pointer">
                     <li class = "hover:text-stone-800 my-1 hover:-translate-y-1 hover:font-bold transition-all text-lg m-auto"><a href="www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
                     <li class = "hover:text-stone-800 my-1 hover:-translate-y-1 hover:font-bold transition-all text-lg m-auto"><a href="www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a></li>
