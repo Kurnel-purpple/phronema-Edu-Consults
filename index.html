@@ -10,57 +10,88 @@
     <script src="https://kit.fontawesome.com/6a6fe3d180.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-lightwheat flex flex-col">
-    <nav class="nav  h-20 flex justify-between bg-milk">
-        <figure class="logo w-20">
-            <a href="index.html"><img src="pics/PEC-logo.jpeg" alt="" class="w-full rounded"></a>
-        </figure>
-
-        
-        <ul id="nav-list" class="navBar relative justify-between py-1 px-3 h-fit
-            font-semibold text-white w-4/5 hidden xl:flex md:flex sm:flex">
-            <button id="exitMenuBtn" onclick="closeMenu()" class="exitMenuBtn text-3xl bg-stone-800 rounded border border-wheat font-bold text-wheat w-fit py-2 px-3 absolute
-             top-0 right-1 hover:bg-stone-900 sm:hidden md:hidden hover:animate-ping">X</button>
-            <li class="ml-3 bg-gray-900 text-center w-36 h-fit px-3 rounded hover:text-gray-500 cursor-pointer hover:transition-all
-             hover:underline-offset-4"><a href="services.html">Services</a> </li>
-            <li class="ml-3 bg-gray-900 text-center w-36 h-fit px-3 rounded hover:text-gray-500 cursor-pointer hover:transition-all
-             hover:underline-offset-4"><a href="#">Blog</a></li>
-            <li class="ml-3 bg-gray-900 text-center w-60 h-fit px-2 rounded hover:text-gray-500 cursor-pointer hover:transition-all
-             hover:underline-offset-4"><a href="#">About Us</a></li>
-            <li class="ml-3 bg-gray-900 text-center w-80 h-fit px-2 rounded hover:text-gray-500 cursor-pointer hover:transition-all
-             hover:underline-offset-4"><a href="studyAbroad.html">Study Abroad</a></li>
-            <li class="ml-3 bg-gray-900 text-center w-36 h-fit px-3 rounded hover:text-gray-500 cursor-pointer hover:transition-all
-             hover:underline-offset-4"><a href="#">F.A.Q</a></li>
-        </ul>
-       <div id="Harmburger-menu" onclick="openMenu()" class="MenuBtn flex p-2 md:hidden sm:block hover:animate-pulse hover:bg-milk">
-        <i class="fa-solid fa-bars text-3xl cursor-pointer ease-in-out duration-300
-        hover:animate-pulse"></i>
-
-       </div>
-    </nav>
-
-    <!-- welcome section -->
-    <section class="hero sm:flex-row flex flex-col justify-between px-4 mt-4 border-b-gray-400 border-b ">
-        <div class="welcomeMsg flex flex-col">
-            <h2 class="font-semibold m-auto sm:-left-40 -left-20
-            relative text-4xl text-neutral-900 bg-red-400 px-2 py-1 rounded mb-4">Welcome <span class="text-green-600 text-2xl">to</span></h2>
-            <h4 class="welcomeMsgHero relative max-w-lg left-5 m-auto mb-3 bg-yellow-800 p-2 text-lg text-wheat rounded">
-                <span class="PEC font-bold"><span class="text-cyan-500 text-3xl">Phronema</span> Education Consults <span class="text-orangered">international</span>.</span> <br>
-            </h4>
-            <div class="font-semibold bg-fuchsia-400 rounded px-2 py-1 max-w-xl text-neutral-700 -left-3 sm:left-10 relative m-auto w-4/5">We exist to enhance and usher you into the age of the competent.
-                Now that you are here, how about a quick view of what we are about?
-                <span ><a href="#" class="text-sm ml-3 font-bold bg-wheat text-black rounded 
-                 px-2 py-1 hover:bg-lightwheat hover:transition-all">Learn more..</a></span>
-             </div>
-        </div>
-        <div class="socials m-auto sm:mx-0 justify-end align-middle sm:my-auto w-2/5">
-            <ul class=" text-gray-500 text-sm flex sm:flex-col justify-between">
-                <li class = "hover:text-stone-800 my-2 hover:-translate-y-1 hover:font-bold transition-all text-lg"><a href="www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
-                <li class = "hover:text-stone-800 my-2 hover:-translate-y-1 hover:font-bold transition-all text-lg"><a href="www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a></li>
-                <li class = "hover:text-stone-800 my-2 hover:-translate-y-1 hover:font-bold transition-all text-lg"><a href="www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
-                <li class = "hover:text-stone-800 my-2 hover:-translate-y-1 hover:font-bold transition-all text-lg"><a href="www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+    <header class="header bg-center bg-cover flex flex-col justify-between h-full" style="background-image: url(pics/hallowed-mount.jpg);
+    background-size: cover;">
+        <nav class="nav fixed w-full z-10 sm:h-20 flex justify-between">
+            <figure class="logo w-20">
+                <a href="index.html"><img src="pics/PEC-logo.jpeg" alt="" class="w-full rounded"></a>
+            </figure>
+    
+            
+            <ul id="nav-list" class="navBar relative justify-between py-1 px-3 h-fit
+                font-semibold text-white w-4/5 hidden xl:flex md:flex sm:flex">
+                <button id="exitMenuBtn" onclick="closeMenu()" class="exitMenuBtn text-3xl bg-stone-800 rounded border border-wheat font-bold text-wheat w-fit py-2 px-3 absolute
+                 top-0 right-1 hover:bg-stone-900 sm:hidden md:hidden hover:animate-ping">X</button>
+                <li class="ml-3 bg-gray-900 text-center w-36 h-fit px-3 rounded hover:text-gray-500 cursor-pointer hover:transition-all
+                 hover:underline-offset-4"><a href="services.html">Services</a> </li>
+                <li class="ml-3 bg-gray-900 text-center w-36 h-fit px-3 rounded hover:text-gray-500 cursor-pointer hover:transition-all
+                 hover:underline-offset-4"><a href="#">Blog</a></li>
+                <li class="ml-3 bg-gray-900 text-center w-60 h-fit px-2 rounded hover:text-gray-500 cursor-pointer hover:transition-all
+                 hover:underline-offset-4"><a href="#">About Us</a></li>
+                <div class="sm:flex sm:flex-col">
+                    <li id="StudyAbroadNav" onmouseenter = "showSAdropDown()" onmouseleave="closeSAdropDown()" class="StudyAbroadNav ml-3 bg-gray-900 text-center w-80 h-fit px-2 rounded hover:text-gray-500 cursor-pointer hover:transition-all
+                 hover:underline-offset-4"><a href="studyAbroad.html">Study Abroad</a></li>
+                 <ul onmouseenter="showSAdropDown()" onmouseleave ="closeSAdropDown()" class="studyAbroadDropDown hidden m-auto flex-col bg-stone-800 px-2 pt-3 pb-2">
+                    <li class="my-2 border-b flex justify-between"><a href="#" class="mr-2">Visa Application</a>
+                    <select name="Visa-Application" id="" class="w-fit cursor-pointer justify-between text-sm font-light text-stone-800 bg-wheat">
+                        <option value="Student-Visa"><a href="#">Student Visa</a></option>
+                        <option value="Work-Visa"><a href="#">Work Visa</a></option>
+                        <option value="Tourist-Visa"><a href="#">Tourist Visa</a></option>
+                        <option value="Visit-Visa"><a href="#">Visit Visa</a></option>
+                    </select></li>
+                    <li class="my-2 border-b"><a href="#">Accomodation</a></li>
+                    <li class="my-2 border-b"><a href="#">Join a Study-group</a></li>
+                    <li class="my-2 border-b"><a href="#">Apply for scholarship</a></li>
+                    <li class="my-2 border-b flex justify-between"><a href="#">Examinations</a>
+                    <select name="Int-Exams" id="" class="w-fit cursor-pointer justify-between text-sm font-light text-stone-800 bg-wheat">
+                        <option value="IELTS"><a href="#">IELTS</a></option>
+                        <option value="CD-IELTS"><a href="#">CD-IELTS</a></option>
+                        <option value="TOEFL"><a href="#">TOEFL</a></option>
+                    </select></li>
+                 </ul>
+                </div>
+                <li class="ml-3 bg-gray-900 text-center w-36 h-fit px-3 rounded hover:text-gray-500 cursor-pointer hover:transition-all
+                 hover:underline-offset-4"><a href="#">F.A.Q</a></li>
             </ul>
+           <div id="Harmburger-menu" onclick="openMenu()" class="MenuBtn flex p-2 md:hidden sm:block hover:animate-pulse hover:bg-milk">
+            <i class="fa-solid fa-bars text-3xl cursor-pointer ease-in-out duration-300
+            hover:animate-pulse text-milk"></i>
+    
+           </div>
+        </nav>
+    
+        <!-- welcome section -->
+        <div class="hero m-auto relative top-10 sm:flex-row flex flex-col justify-between px-4 border-b-gray-400 border-b bg-cover bg-center bg-no-repeat">
+            <div class="welcomeMsg flex flex-col h-3/4">
+                <h2 class="font-semibold m-auto sm:-left-40 -left-20
+                relative text-4xl text-neutral-900 bg-red-400 px-4 sm:px-2 py-1 rounded mb-4">Welcome <span class="text-white text-2xl">to</span></h2>
+                <h4 class="welcomeMsgHero relative max-w-lg  m-auto mb-3 bg-yellow-800 p-2 text-lg text-wheat rounded">
+                    <span class="PEC font-bold"><span class="text-cyan-500 text-3xl">Phronema</span> Education Consults <span class="text-orangered">international</span>.</span> <br>
+                </h4>
+                <div class="font-semibold bg-fuchsia-400 rounded px-2 py-1 max-w-xl text-neutral-700 -left-3 sm:left-10 relative m-auto w-4/5">We exist to enhance and usher you into the age of the competent.
+                    Now that you are here, how about a quick view of what we are about?
+                    <span ><a href="#" class="text-sm ml-3 font-bold bg-wheat text-black rounded 
+                     px-2 py-1 hover:bg-lightwheat hover:transition-all">Learn more..</a></span>
+                 </div>
+            </div>
+            <div class="socials m-auto sm:mx-0 justify-end align-middle sm:my-auto w-2/5">
+                <ul class=" text-gray-500 text-sm flex sm:flex-col justify-between text-right">
+                    <li class = "hover:text-stone-800 my-2 hover:-translate-y-1 hover:font-bold transition-all text-lg"><a href="www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li class = "hover:text-stone-800 my-2 hover:-translate-y-1 hover:font-bold transition-all text-lg"><a href="www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li class = "hover:text-stone-800 my-2 hover:-translate-y-1 hover:font-bold transition-all text-lg"><a href="www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li class = "hover:text-stone-800 my-2 hover:-translate-y-1 hover:font-bold transition-all text-lg"><a href="www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
         </div>
-    </section>
+
+        <!-- register button area -->
+        <div class="heroBtns m-auto flex flex-col sm:flex-row justify-between w-2/4 sm:w-2/5 h-1/3">
+            <button class="text-wheat font-semibold hover:translate-y-1 rounded-xl bg-rebeccapurple
+            px-2 py-1 hover:cursor-pointer hover:bg-stone-800 h-fit sm:border sm:px-4 sm:cursor-pointer"><a href="#">Register</a></button>
+            <button class="text-wheat font-semibold hover:translate-y-1 rounded-xl bg-orangered
+            px-2 py-1 hover:cursor-pointer hover:bg-red-800 h-fit sm:border sm:px-4 sm:cursor-pointer"><a href="#">Chat with Us</a></button>
+        </div>
+    </header>
 
     <!-- services section -->
     <h2 class="font-bold text-4xl sm:text-2xl m-auto mt-10 border-gray-300 border-b-2">

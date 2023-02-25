@@ -137,9 +137,18 @@
                  rounded-br-none rounded-3xl m-auto">
                 <figcaption class="max-w-lg bg-gray-300 m-auto my-2 text-blue-900">
                     <div class="flex justify-between bg-white pr-2">
-                        <h3 class="font-semibold bg-white rounded text-lg sm:text-2xl px-2 py-1
-                     text-rebeccapurple w-fit">INTERNATIONAL LANGUAGES</h3>
-                     <i class="relative sm:-top-6 -top-4 fa-solid fa-language text-3xl sm:text-5xl text-stone-800"></i>
+                        <h3 class="font-semibold flex justify-between bg-white rounded text-lg sm:text-2xl px-2 py-1
+                     text-rebeccapurple w-full">INTERNATIONAL LANGUAGES</h3>
+                     <div class="flex flex-col pb-2">
+                        <i class="relative sm:-top-6 -top-4 fa-solid fa-language text-3xl sm:text-5xl text-stone-800"></i>
+                     <select name="int-Languages" id="" class="sm:flex hidden
+                     text-sm outline-none text-stone-800 border-b-2 m-auto mb-2 cursor-pointer">
+                        <option value="French">French</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="German">German</option>
+                        <option value="Afrikans">Afrikans</option>
+                     </select>
+                     </div>
                     </div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Facilis, nemo dolorem adipisci suscipit ratione 
@@ -151,7 +160,7 @@
                 <li class="font-semibold text-gray-300 hover:text-blue-300 hover:-translate-y-1"><a href="#">Tools/Equipments</a></li>
                 <li class="font-semibold text-gray-300 hover:text-blue-300 hover:-translate-y-1"><a href="#">Teaching Mode</a></li>
             </ul>
-            <ul class="languages m-auto text-sm sm:text-lg sm:flex grid grid-cols-2 gap-2 relative sm:left-36 sm:-top-20 justify-between my-3">
+            <ul class="languages sm:hidden m-auto text-sm sm:text-lg grid grid-cols-2 gap-2 relative sm:left-36 sm:-top-20 justify-between my-3">
                 <li class="mx-4 font-semibold text-wheat hover:underline hover:cursor-pointer
                 hover:-translate-y-1 hover:text-milk border-r px-4 border-gray-300">Spanish</li>
                 <li class="mx-4 font-semibold text-wheat hover:underline hover:cursor-pointer
