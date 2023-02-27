@@ -69,3 +69,70 @@
         background-repeat: no-repeat;
     }
 }
+ul .dropDown:hover > ul{
+    display: initial;
+}
+.options > ul{
+    margin: auto;
+}
+.options > ul li{
+    font-weight: bold;
+    margin: 0 10px;
+    background: wheat;
+    height: fit-content;
+    padding: 5px 10px;
+    border-radius: 0 15px;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.7);
+    transition: .3s ease;
+    z-index: 10 ;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+.options > ul li:hover{
+    background: rgb(46, 45, 45);
+    color: wheat;
+}
+.options > ul li ul{
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    width: 200px;
+    left: 30px;
+    display: none;
+    background: rgb(197, 178, 142);
+    border-radius: 10px;
+}
+li.exams-dropDown > ul{
+    width: 150px !important;
+}
+
+/* MEDIA SCREEN AREA */
+
+@media screen and (max-width:640px) {
+    .options > ul li ul{
+        top: 20px;
+    }
+    li.exams-dropDown > ul{
+        width: 150px !important;
+        left: 20px !important;
+    }
+    .options > ul .dropDown ul{
+        width: 200px;
+        left: 20px;
+    }
+}
+.options > ul li span{
+    font-size: 1em;
+}
+.options > ul .dropDown{
+    position: relative;
+    transition: .3s ease;
+}
+.options > ul .dropDown:hover > ul{
+    display: initial;
+    color: black;
+    transition: .5s ease;
+}
+.exams-dropDown ul{
+    width: 150px;
+}

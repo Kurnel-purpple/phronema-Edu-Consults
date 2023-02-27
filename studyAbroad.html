@@ -12,7 +12,7 @@
 <body class="bg-lightwheat w-full">
     <header class="w-full bg-red-500 mb-5 h-96 bg-center bg-cover bg-no-repeat
     flex flex-col" style="background-image: url(pics/warsaw\ 5.jpeg);" >
-    <nav class="nav  h-20 flex justify-between bg-milk">
+    <nav class="nav  h-20 flex justify-between ">
         <figure class="logo w-20">
             <a href="index.html"><img src="pics/PEC-logo.jpeg" alt="" class="w-full rounded"></a>
         </figure>
@@ -45,10 +45,54 @@
             </p>
         
     </header>
+
+    <!-- DropDown Options section -->
+    <section class="options bg-gray-500 flex flex-col w-full sm:h-20 h-40">
+        <ul class="grid gap-2 grid-cols-2 sm:flex justify-between relative list-none m-auto top-0">
+            <li class="dropDown hidden lg:flex lg:flex-col "><a href="#">visa application <span>&DownArrowBar;</span></a>
+                <ul class="z-10">
+                    <li><a href="#">Student-Visa</a></li>
+                    <li><a href="#">tourist-Visa</a></li>
+                    <li><a href="#">work-Visa</a></li>
+                    <li><a href="#">visit-Visa</a></li>
+                </ul>
+            </li>
+            <li class="lg:hidden"><a href="#">employment</a></li>
+            <li class="lg:hidden "><a href="#">scholarship</a></li>
+            <li class="hidden lg:flex"><a href="#">Apply for scholarship</a></li>
+            <li class=""><a href="#">Accomodation</a></li>
+            <li class="lg:hidden"><a href="#">study group</a></li>
+            <li class="hidden lg:flex"><a href="#">join a study group</a></li>
+            <li class="lg:hidden dropDown exams-dropDown"><a href="#">int-exams <span>&DownArrowBar;</span></a>
+                <ul>
+                    <li><a href="#">IELTS</a></li>
+                    <li><a href="#">TOEFL</a></li>
+                    <li><a href="#">CD-IELTS</a></li>
+                </ul>
+            </li>
+            <li class="hidden lg:flex sm:flex-col dropDown exams-dropDown"><a href="#">enroll for int-exams <span>&DownArrowBar;</span></a>
+                <ul>
+                    <li><a href="#">IELTS</a></li>
+                    <li><a href="#">TOEFL</a></li>
+                    <li><a href="#">CD-IELTS</a></li>
+                </ul>
+            </li>
+            
+            <li class="dropDown lg:hidden "><a href="#">visa application <span>&DownArrowBar;</span></a>
+                <ul class="z-10">
+                    <li><a href="#">Student-Visa</a></li>
+                    <li><a href="#">tourist-Visa</a></li>
+                    <li><a href="#">work-Visa</a></li>
+                    <li><a href="#">visit-Visa</a></li>
+                </ul>
+            </li>
+            <li class="hidden lg:flex"><a href="#">employment packages</a></li>
+        </ul>
+    </section>
     
     <!-- international schools section -->
-    <section class="flex flex-col">
-        <div class="consultation sm:w-5/6 m-auto my-5 min-w-3/4 flex flex-col border-b border-gray-500">
+    <section class="flex flex-col relative">
+        <div class="consultation relative sm:w-5/6 m-auto my-5 min-w-3/4 flex flex-col border-b border-gray-500">
             <h2 class="intEduH2 font-semibold bg-milk w-fit 
             relative   sm:-left-16 my-4 sm:mx-3 shadow-md text-orange-300 pl-2 sm:px-2 py-1 text-xl">INTERNATIONAL EDUCATION CONSULTATION</h2>
             <p class="text-xl mb-3 pl-1">we offer access and required information for entry into the
