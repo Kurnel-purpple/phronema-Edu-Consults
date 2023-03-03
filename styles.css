@@ -58,12 +58,78 @@
     transition: 0.5s;
 }
 
-.header{
+header.header{
+    background-color: rgba(0, 0, 0, 0.664);
     height: 100vh;
+    background-image: url(pics/hallowed-mount.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slide 25s infinite ease-in-out;
+    
+}
+@keyframes slide{
+    0%{
+        background-image: url(pics/Passport-Loggage.jpg);
+    }
+    20%{
+        background-image: url(pics/Passport-1.jpg);
+    }
+    40%{
+        background-image: url(pics/light-bulb-girl.jpg);
+    }
+    60%{
+        background-image: url(pics/office-meeting.jpg);
+    }
+    80%{
+        background-image: url(pics/globe-1.jpg);
+    }
+    100%{
+        background-image: url(pics/handOnMap.jpg);
+    }
+    /* 120%{
+        background-image: url(pics/crafts-man.jpg);
+    }
+    140%{
+        background-image: url(pics/graduation-1.jpg);
+    }
+    160%{
+        background-image: url(pics/girl-globe.jpg);
+    }
+    180%{
+        background-image: url(pics/hallowed-mount.jpg);
+    }
+    200%{
+        background-image: url(pics/teacher-students-3.jpg);
+    } */
+}
+header.studyAbroadHeader{
+    animation: studyAbroadSlide 18s infinite;
+    animation-timing-function: linear;
+}
+@keyframes studyAbroadSlide{
+    0%{
+        background-image: url(pics/graduation-1.jpg);
+    }
+    20%{
+        background-image: url(pics/warsaw\ 5.jpeg);
+    }
+    40%{
+        background-image: url(pics/warsaw\ 2.jpeg);
+    }
+    60%{
+        background-image: url(pics/office-meeting.jpg);
+    }
+    80%{
+        background-image: url(pics/crafts-man.jpg);
+    }
+    100%{
+        background-image: url(pics/graduation-1.jpg);
+    }
 }
 @media screen and (max-width:400px) {
     .header{
-        background-image: url("pics/teacher-high-5.jpg");
+        background-image: url("pics/hallowed-mount.jpg");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -135,4 +201,18 @@ li.exams-dropDown > ul{
 }
 .exams-dropDown ul{
     width: 150px;
+}
+
+
+@media  screen and (max-width:885px) {
+    nav .blogNavUl{
+        display: none;
+    }
+    nav .blogMenuBtn{
+        display: flex;
+        color: black;
+    }
+    nav .blogExitMenuBtn{
+        display: flex;
+    }
 }
