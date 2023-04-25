@@ -6,28 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PEC blog posts</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css2.css">
     <link rel="stylesheet" href="tailwind.css">
+    <script src="https://kit.fontawesome.com/6a6fe3d180.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header >
-        <nav class="nav blogNav fixed w-full z-10 sm:h-20 flex justify-between bg-wheat">
+<body class="flex flex-col">
+    <header class="bg-[url('pics/teacher-students-3.jpg')] bg-opacity-0 bg-center bg-cover bg-no-repeat h-screen">
+        <nav class="nav relative w-full z-10 sm:h-20 flex justify-between ">
             <figure class="logo w-20">
-                <a href="index.html"><img src="pics/PEC-logo.jpeg" alt="" class="w-full rounded"></a>
+                <a href="index.html" class = "flex"><img src="pics/PEC-new-logo-2.jpeg" alt="" class="w-full rounded"><span class="m-auto font-bold text-3xl ">Blog</span></a>
             </figure>
     
             
-            <ul id="nav-list" class="navBar blogNavUl relative justify-between py-1 px-3 h-fit
+            <ul id="nav-list" class="navBar relative justify-between py-1 px-3 h-fit
                 font-semibold text-white w-4/5 hidden xl:flex md:flex sm:flex">
-                <button id="exitMenuBtn" onclick="closeMenu()" class="exitMenuBtn blogExitMenuBtn text-3xl bg-stone-800 rounded border border-wheat font-bold text-wheat w-fit py-2 px-3 absolute
-                 top-0 right-1 hover:bg-stone-900 sm:flex lg:hidden hover:animate-ping">&#9747</button>
+                <button id="exitMenuBtn" onclick="closeMenu()" class="exitMenuBtn text-3xl bg-stone-800 rounded border border-wheat font-bold text-wheat w-fit py-2 px-3 absolute
+                 top-0 right-1 hover:bg-stone-900 sm:hidden md:hidden hover:animate-ping">&#9747</button>
+                 <li class="ml-3 bg-gray-900 text-center w-36 h-fit px-3 rounded hover:text-gray-500 cursor-pointer hover:transition-all
+                 hover:underline-offset-4"><a href="index.html">Home</a></li>
                 <li class="ml-3 bg-gray-900 text-center w-36 h-fit px-3 rounded hover:text-gray-500 cursor-pointer hover:transition-all
                  hover:underline-offset-4"><a href="services.html">Services</a> </li>
-                <li class="ml-3 bg-gray-900 text-center w-36 h-fit px-3 rounded hover:text-gray-500 cursor-pointer hover:transition-all
-                 hover:underline-offset-4"><a href="#">Blog</a></li>
+                
                 <li class="ml-3 bg-gray-900 text-center w-60 h-fit px-2 rounded hover:text-gray-500 cursor-pointer hover:transition-all
-                 hover:underline-offset-4"><a href="#">About Us</a></li>
-                <div class="sm:flex sm:flex-col">
-                    <li id="StudyAbroadNav" onmouseenter = "showSAdropDown()" onmouseleave="closeSAdropDown()" class="StudyAbroadNav ml-3 bg-gray-900 text-center w-80 h-fit px-2 rounded hover:text-gray-500 cursor-pointer md:hover:transition-all
+                 hover:underline-offset-4"><a href="aboutUs.html">About Us</a></li>
+                <div class="sm:flex sm:flex-col flex-nowrap w-52">
+                    <li id="StudyAbroadNav" onmouseenter = "showSAdropDown()" onmouseleave="closeSAdropDown()" class="StudyAbroadNav ml-3 bg-gray-900 text-center w-52 lg:w-72 h-fit px-2 rounded hover:text-gray-500 cursor-pointer md:hover:transition-all
                  "><a href="studyAbroad.html">Study Abroad</a></li>
                  <ul onmouseenter="showSAdropDown()" onmouseleave ="closeSAdropDown()" class="studyAbroadDropDown hidden m-auto flex-col bg-stone-800 px-2 pt-3 pb-2 relative">
                     <li class="my-2 border-b flex justify-between"><a href="#" class="mr-2">Visa Application</a>
@@ -49,12 +52,230 @@
                  </ul>
                 </div>
                 <li class="ml-3 bg-gray-900 text-center w-36 h-fit px-3 rounded hover:text-gray-500 cursor-pointer hover:transition-all
-                 hover:underline-offset-4"><a href="#">F.A.Q</a></li>
+                 hover:underline-offset-4"><a href="faq.html">F.A.Q</a></li>
             </ul>
-           <div id="Harmburger-menu" onclick="openMenu()" class="MenuBtn blogMenuBtn flex p-2 md:hidden sm:block hover:animate-pulse hover:bg-milk text-wheat h-fit font-bold text-3xl ease-in-out duration-300 cursor-pointer">&#9778
+           <div id="Harmburger-menu" onclick="openMenu()" class="MenuBtn flex p-2 md:hidden sm:block hover:animate-pulse hover:bg-milk text-stone-700 h-fit font-bold text-3xl ease-in-out duration-300 cursor-pointer">&#9778
            </div>
         </nav>
+        <div class="flex relative md:top-52">
+            <div class="blogPost-Intro flex flex-col my-5 h-64 relative top-20 mx-1  bg-[url('pics/NightCity.jpg')] bg-center  bg-cover bg-no-repeat text-wheat font-semibold">
+                <h3 class="text-purple-600 w-fit bg-gray-200 mx-auto my-2 font-semibold text-xl px-2 text-center">Lorem ipsum dolor sit </h3>
+                <p class="text-white text-lg px-2 relative md:top-20 top-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod repudiandae veritatis vel quia hic ipsa voluptatibus dolor soluta fuga quo.</p>
+            </div>
+            <div class="blogPost-Intro flex flex-col my-5 h-64 relative top-20 mx-1  bg-[url('pics/technical-lady.jpg')] bg-center  bg-cover bg-no-repeat text-wheat font-semibold">
+                <h3 class="bg-purple-600 w-fit text-gray-200 mx-auto my-2 font-semibold text-xl px-2 text-center">Lorem ipsum dolor sit </h3>
+                <p class="text-white text-lg px-2 relative md:top-20 top-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod repudiandae veritatis vel quia hic ipsa voluptatibus dolor soluta fuga quo.</p>
+            </div>
+            <div class="blogPost-Intro flex flex-col my-5 h-64 relative top-20 mx-1  bg-[url('pics/globe-1.jpg')] bg-center bg-cover bg-no-repeat text-wheat font-semibold">
+                <h3 class="text-purple-600 w-fit bg-gray-200 mx-auto my-2 font-semibold text-xl px-2 text-center">Lorem ipsum dolor sit </h3>
+                <p class="text-white text-lg px-2 relative md:top-20 top-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod repudiandae veritatis vel quia hic ipsa voluptatibus dolor soluta fuga quo.</p>
+            </div>
+            <div class="blogPost-Intro flex flex-col my-5 h-64 relative top-20 mx-1  bg-[url('pics/crafts-man.jpg')] bg-center bg-cover bg-no-repeat text-wheat font-semibold">
+                <h3 class="bg-purple-600 w-fit text-gray-200 mx-auto my-2 font-semibold text-xl px-2 text-center">Lorem ipsum dolor sit </h3>
+                <p class="text-white text-lg px-2 relative md:top-20 top-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod repudiandae veritatis vel quia hic ipsa voluptatibus dolor soluta fuga quo.</p>
+            </div>
+        </div>
     </header>
+      
+    
+        
+    
+
+    <section class="blog my-auto">
+       
+        <div class="blogPostContainer">
+            <!-- <div class="blogItem1">
+                <figure>
+                    <img src="pics/art-tray.jpg" alt="">
+                    <figcaption>Jane Doe</figcaption>
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At possimus ad id aspernatur porro vel eos optio maiores magni sit ducimus amet tempora voluptatum delectus dolor obcaecati consectetur earum eaque quis, doloribus architecto unde. Repellat deleniti fuga incidunt consequatur, hic saepe tempore distinctio sapiente expedita cumque eius deserunt amet tempora porro! Doloremque ad voluptates praesentium! Voluptatum necessitatibus dolorum ex asperiores praesentium et suscipit consequuntur consectetur, architecto quae, labore odit nulla tempore quo voluptates ipsum laudantium aliquam. Dicta, ab aliquid magnam qui ipsum quisquam mollitia, veritatis, beatae maxime laboriosam dignissimos maiores! Voluptatum explicabo commodi autem, veritatis inventore pariatur sunt animi! Sunt minima officia suscipit beatae accusamus accusantium ullam eaque tempore? Aliquam fugiat debitis possimus repellendus dolorum praesentium cumque mollitia, doloremque quod quae vero, quidem aut repellat repudiandae velit odio sint quos corrupti nesciunt laborum, tempore odit assumenda. Enim eveniet quo veniam sit mollitia hic saepe obcaecati? Enim assumenda asperiores aspernatur culpa.</p>
+            </div> -->
+        </div>
+        <div class="blog-container justify-between text-xl sm:block block  py-1 w-5/6 m-auto">
+
+           <div class="blogItem border-r border-r-slate-200 bg-lightwheat">
+                <h3 class="text-2xl md:text-4xl rounded-md sm:text-xl text-center sm:text-left my-4 w-fit px-2 py-1 bg-stone-600 text-wheat">Word from the Chair: Everyone is a gamechanger</h3>    
+                <figure class="sm:float-left px-2 justify-between sm:flex sm:flex-col">
+                        <img src="pics/mic.jpg" class="w-10 sm:w-48 lg:w-72 bg-white rounded-full sm:rounded-xl float-left" alt="image of blog author">
+                        <figcaption class="font-semibold my-auto sm:text-blue-700 sm:border-b border-stone-700 sm:text-center flex flex-col">
+                            Prof. dr. G.P. Scott-Smith
+                            <span class="text-sm font-light text-stone-500 py-3"> Politics and  Social Justice & Human Rights •  2 min read</span>
+                        </figcaption>
+                    </figure>
+                    <p class="px-2 md:text-xl">
+                        
+                        
+                        On 21 April the Four Freedoms Awards were presented in Middelburg. Four what? I hear you say. The ‘thinking person’s Oscars’, or the ‘poor person’s Nobel’, the FFs draw their inspiration from Franklin Roosevelt’s ‘Four Freedoms speech’ on 6 January 1941.
+                        
+                        The USA was still neutral at that point, but FDR outlined a vision of a peaceful future based on the fundamentals of Freedom of Speech, Freedom of Religion, Freedom from Want, and Freedom from Fear. Since 1982 awards have been given to international recipients who through their work epitomize the values expressed in that speech. And why Middelburg? Because the Roosevelts originally came from Zeeland, emigrating to then New Amsterdam in the mid-17th century.
+                        
+                        Winner of the main award was Svetlana Tikanovskaya, the Belorussian democracy activist who’s husband is in prison and who continues her struggle from exile in Lithuania. She spoke of the ongoing underground resistance in Belarus, including the actions of ‘partizans’ (her term) who had sabotaged parts of the railway system to disrupt the Russian invasion of Ukraine. One wonders what the conversation was like during lunch, she being sat next to Mark Rutte and Willem Alexander. All of the winners were – as with every Four Freedoms – powerful and inspiring, making you feel very small (and overly comfortable) when confronted with their daily battles (often literally) for basic freedoms around the world. Previous winners who for me have really stood out were Emmanuel de Merode (2018), defending the Virunga National Park and its gorilla population as civil war rages in the Congo, and Al Jazeera (2012), whose spokesperson delivered a remarkably hard-hitting speech criticizing the US military for targeting their journalists in Afghanistan and Iraq. You can find more at www.fourfreedoms.nl
+                        
+                        The award for Freedom of Speech this year went to the Vietnamese cultural phenomenon Mai Khoi. Originally a pop star seeking nothing more than fame and wealth, over the past decade Mai Khoi has become the most prominent public intellectual critic of the one-party communist state of Vietnam. Wanting to expand her musical repertoire, she soon ran into trouble with the state censors, triggering an escalation of her protests to take on corruption, political repression, environmental damage, and internet surveillance. The excellent documentary ‘Mai Khoi and the Dissidents’ charts her transition from pop star to protestor, including a painful moment in 2016 when she risked imprisonment to meet Obama only to find the US President prepared to place strategic rapprochement with the regime ahead of human rights. This disillusionment led her to remarkable acts of defiance, as during President Trump’s visit to Vietnam in 2017 when she staged a one-person protest by holding a banner with ‘Piss on Trump’ along the route of the motorcade. Only her continuing fame among Vietnamese youth offered any kind of protection from a regime that was less and less tolerant of such acts of dissent, but by 2019 that was no longer enough, and exile was the only option to secure her safety. Since then she has relocated to Pittsburgh and has been working on her next multi-media show, ‘Bad Activist’. With any luck, she’ll bring the show to Europe in the future. You can read more about her work here.
+                        
+                        The Four Freedoms give recognition every two years to individuals around the globe who are prepared to put everything on the line for the sake of a humanitarian cause. It’s a small gesture, but an important one. For a short time, rebels mix with royalty in a seemingly shared campaign for a better world. It’s a reminder that, behind the norms of political and economic activity, there’s a culture of irrepressible humanitarian dissent challenging those norms every day, regardless of the circumstances. As Mai Khoi said, ‘everyone can be a game-changer’ <span class="text-blue-500
+                         cursor-pointer font-semibold hover:translate-x-2 hover:text-red-600"><a href="#">read more..</a></span>
+
+                    </p>
+                    <div class="socialsAndActions mt-4 mr-2 bg-milk px-2 py-1 m-0 flex justify-between">
+                        <ul class="socials flex w-2/4 justify-between text-slate-400 text-sm 
+                         hover:cursor-pointer">
+                            <li class = "hover:text-stone-700 hover:font-bold transition-all"><a href="www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+                            <li class = "hover:text-stone-700 hover:font-bold transition-all"><a href="www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a></li>
+                            <li class = "hover:text-stone-700 hover:font-bold transition-all"><a href="www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
+                            <li class = "hover:text-stone-700 hover:font-bold transition-all"><a href="www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                        <ul class="actions font-semibold text-blue-800 text-sm w-2/5 justify-between flex">
+                            <li><a href="#" class="hover:text-stone-700 hover:translate-y-1"><i class="fa-solid fa-thumbs-up"></i></a></li>
+                            <li><a href="#" class="hover:text-stone-700 hover:translate-y-1"><i class="fa-solid fa-share-from-square"></i></a></li>
+                            <li><a href="#" class="hover:text-stone-700 hover:translate-y-1"><i class="fa-solid fa-floppy-disk"></i></a></li>
+                        </ul>
+                    </div>
+           </div>
+           <div class="moreBlogPosts bg-wheat flex my-5 h-56">
+                <div class="blogPost-Intro flex flex-col my-5 h-44 relative mx-1  bg-[url('pics/NightCity.jpg')] bg-center  bg-cover bg-no-repeat text-wheat font-semibold">
+                    <h3 class="text-purple-600 w-fit bg-gray-200 mx-auto my-2 font-semibold text-xl px-2 text-center">Lorem ipsum dolor sit </h3>
+                    <p class="text-white text-sm px-2 relative md:top-14 top-10 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod repudiandae veritatis </p>
+                </div>
+                <div class="blogPost-Intro flex flex-col my-5 h-44 relative mx-1  bg-[url('pics/technical-lady.jpg')] bg-center  bg-cover bg-no-repeat text-wheat font-semibold">
+                    <h3 class="bg-purple-600 w-fit text-gray-200 mx-auto my-2 font-semibold text-xl px-2 text-center">Lorem ipsum dolor sit </h3>
+                    <p class="text-white text-sm px-2 relative md:top-14 top-10 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod repudiandae veritatis </p>
+                </div>
+                <div class="blogPost-Intro flex flex-col my-5 h-44 relative mx-1  bg-[url('pics/globe-1.jpg')] bg-center bg-cover bg-no-repeat text-wheat font-semibold">
+                    <h3 class="text-purple-600 w-fit bg-gray-200 mx-auto my-2 font-semibold text-xl px-2 text-center">Lorem ipsum dolor sit </h3>
+                    <p class="text-white text-sm px-2 relative md:top-14 top-10 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod repudiandae veritatis </p>
+                </div>
+                <div class="blogPost-Intro flex flex-col my-5 h-44 relative mx-1  bg-[url('pics/crafts-man.jpg')] bg-center bg-cover bg-no-repeat text-wheat font-semibold">
+                    <h3 class="bg-purple-600 w-fit text-gray-200 mx-auto my-2 font-semibold text-xl px-2 text-center">Lorem ipsum dolor sit </h3>
+                    <p class="text-white text-sm px-2 relative md:top-14 top-10 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod repudiandae veritatis </p>
+                </div>
+           </div>
+           <div class="blogItem  ml-2 bg-lightwheat mt-4">
+            <h3 class="text-2xl md:text-2xl rounded-md sm:text-xl text-center sm:text-left w-fit px-2 py-1 bg-stone-600 text-wheat m-auto  mb-10">Academics sound the alarm: towards a normal academic standard</h3>
+               
+                 <figure class="flex sm:block sm:float-right px-2 justify-between">
+                    <img src="pics/mic.jpg" class="w-10 sm:w-48 lg:w-72 bg-white sm:rounded-xl rounded-full" alt="image of blog author">
+                    <figcaption class="font-semibold my-auto sm:text-center flex flex-col">Dr. J.A. Naeff <br>
+                        <span class="text-sm text-stone-500">University Lecturer International Studies</span>
+                        <span class="text-sm text-stone-500 font-light">Politics and  Social Justice & Human Rights •  3 min read</span>
+                    </figcaption>
+                </figure>
+                <p class="px-2 md:text-xl">
+                     
+                    
+                    On 6 April 2021 academics across the Netherlands protested against on-going austerity in higher education. Leiden University lecturers explain why.
+                    
+                    On Tuesday 6 April 2021, a group of protesters wearing red berets, some in professor gowns, gathered at the Hofvijver in the Hague. Under the distressing sound of an alarm, a group of protesters entered the water, among them PhD fellow Tim de Zeeuw, former lecturer at International Studies and member of the University Council. “I entered the Hofvijver because it is important that we push harder for serious reform of the current system,” says Tim. “I have experienced academic life as both student and staff in the past 13 years and it is clearly not sustainable. There is not enough time to fully develop our research and education leading to significant physical and psychological stress and frustration. This is why I joined the university council and this is why I went in to the Hofvijver. If this leads to some discomfort, and in this case wet, cold and smelly clothes, so be it.”
+                    
+                    2 tim enters the water of the hofvijver
+                    Tim de Zeeuw and colleagues enter the Hofvijver.
+                    Normaal Academisch Peil (NAP) was organized by a broad coalition of the national action group WOinActie, the unions AOb and FNV, the fourteen Dutch universities as well as various academic interest groups such as the PhD network and the Royal Netherlands Historical Society. Their website explains: “Although the number of students has been increasing for years, funding per student has dropped. This has left precious little time and financial resources to conduct high-quality research or deliver high-quality teaching, let alone both.” Due to Covid-19 restrictions, instead of one large demonstration, dozens of smaller actions were organized across the country. At Radboud University, lecturers entered the Spiegelwaal and in Utrecht, protesters emptied a bucket of water on their heads, and on social media, staff and students used the hashtag #NormaalAcademischPeil.
+                    
+                    Even Pieter Duisenberg, President of the Association of Universities in the Netherlands (VSNU), withstood the bitter cold and entered the water in his suit to sound the alarm on April 6. Dripping from the water, he appeared on camera stating that universities are barely able to keep their heads above the water. He referred to the recent report from the independent consultancy firm Price Waterhouse Coopers, which confirms that Dutch universities structurally lack 1.1 billion if they have to meet the ambitions set by the Ministry of Culture and Science (OCW).
+                    
+                    3 pieter duisenberg
+                    Pieter Duisenberg speaks to the press.
+                    “What I find particularly frustrating is that our passion for our work is being exploited. Structural overwork is the norm for regular activities, and on top of that many tasks are expected for which no hours are calculated at all – student mentoring, public events, speaking to the press,” says Sara Polak, lecturer North American Studies. “Especially for those on fixed term contracts it is nearly impossible to refuse such requests, because these activities increase your chances of building an academic career.”
+                    
+                    Students were involved in the action day too. Freya Chiappino, vice chair of the student union LSVB, formed a spectacular sight with a red flag and yellow snorkel. She commented on national television, “You can see in the lecture rooms that student numbers are going through the roof. Lecturers are overworked. Almost every lecturer is burnt out and that has become the norm.”
+                    
+                    Elisa Da Vià, lecturer at International Studies, maintains that student support is crucial. “Students are natural allies in our struggle. Their right and expectations to receive high quality university education by dedicated and passionate teachers can only materialize in a context of labor security, supported by appropriate resources and long term investment in teaching and research. We encourage our students to be vigilant, active, and creative in showing their solidarity and making their demands.”
+                    
+                    4 flag
+                    Freia Chiappino with flag and snorkel.
+                    One group of protesters was particularly loud, chanting “come hail, come snow, casual contracts have to go” to the rhythm of a large drum. They carried a banner with “Casual Leiden: refinance, reform, redistribute.” Sai Englert, lecturer at Middle Eastern Studies and International Studies, explains: “We recognize that underfunding is a structural, sector wide problem. So we support national demands for sustainable financing. But we also understand that this sectoral reality is reproduced and sustained by local managerial decisions. So we also fight for a reorganized higher education sector, in which resources, opportunities, and support are redistributed equally.”
+                    
+                    Polak: “I am somewhat done with the phenomenon of ‘ludic actions.’ To be honest, I think that only serious industrial action can make a real difference.”
+                    
+                    5 casual leiden
+                    Casual Leiden defying the elements<span class="text-blue-500
+                     cursor-pointer font-semibold hover:translate-x-2 hover:text-red-600"><a href="#">read more..</a></span>
+
+                </p>
+                
+                <div class="socialsAndActions mt-4 bg-milk px-2 py-1 m-0 flex justify-between">
+                    <ul class="socials flex w-2/4 justify-between text-slate-400 text-sm 
+                     hover:cursor-pointer">
+                     <li class = "hover:text-stone-700 hover:font-bold transition-all"><a href="www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+                     <li class = "hover:text-stone-700 hover:font-bold transition-all"><a href="www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a></li>
+                     <li class = "hover:text-stone-700 hover:font-bold transition-all"><a href="www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
+                     <li class = "hover:text-stone-700 hover:font-bold transition-all"><a href="www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                    <ul class="actions font-semibold text-blue-800 text-sm w-2/5 justify-between flex">
+                        <li><a href="#" class="hover:text-stone-700 hover:translate-y-1"><i class="fa-solid fa-thumbs-up"></i></a></li>
+                        <li><a href="#" class="hover:text-stone-700 hover:translate-y-1"><i class="fa-solid fa-share-from-square"></i></a></li>
+                        <li><a href="#" class="hover:text-stone-700 hover:translate-y-1"><i class="fa-solid fa-floppy-disk"></i></a></li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+    </section>
+
+
+    <!-- footer area -->
+    <footer class="">
+        <div class="testimonials my-5">
+            <h4 class="font-semibold text-lg mx-2 ">Here's what some of our users and partners have to say.</h4>
+            <div class="testimonies flex flex-col sm:flex-row overflow-scroll sm:overflow-auto">
+                <div class="flex-col flex mx-auto  w-2/4 sm:w1/3 textifier border-r text-center bg-white sm:mx-1 shadow-lg py-2 border-r-slate-200 
+                hover:bg-milk hover:cursor-pointer transition-all">
+                    <figure class="flex px-2 justify-between">
+                        <img src="pics/mic.jpg" class="w-10 rounded-full" alt="image of blog author">
+                    </figure>
+                    <p class="px-2">Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Iusto laborum exercitationem 
+                        earum nemo, 
+                    </p>
+                    <h4 class="sm:left-16 m-auto relative font-semibold">John Rhon</h4>
+                </div>
+                <div class="flex-col flex mx-auto border-r text-center w-2/4 sm:w-1/3 bg-white sm:mx-1 shadow-lg py-2 border-r-slate-200 
+                hover:bg-milk hover:cursor-pointer transition-all">
+                    <figure class="flex px-2 justify-between">
+                        <img src="pics/mic.jpg" class="w-10 rounded-full" alt="image of blog author">
+                    </figure>
+                    <p class="px-2">Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Iusto laborum exercitationem 
+                        earum nemo, 
+                    </p>
+                    <h4 class="sm:left-16 m-auto relative font-semibold">John Rhon</h4>
+                </div>
+                <div class="flex-col flex mx-auto border-r text-center w-2/4 sm:w-1/3 bg-white sm:mx-1 shadow-lg py-2 border-r-slate-200 
+                hover:bg-milk hover:cursor-pointer transition-all">
+                    <figure class="flex px-2 justify-between">
+                        <img src="pics/mic.jpg" class="w-10 rounded-full" alt="image of blog author">
+                    </figure>
+                    <p class="px-2">Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Iusto laborum exercitationem 
+                        earum nemo, 
+                    </p>
+                    <h4 class="sm:left-16 m-auto relative font-semibold">John Rhon</h4>
+                </div>
+            </div>
+        </div>
+        <div class="contact-us flex flex-col  justify-between mb-4">
+            <h3 class="sm:m-auto ml-2 mb-3 font-semibold">Contact Us</h3>
+            <div class="contact flex justify-between  w-5/6 m-auto">
+                <ul class="w-4/6 m-auto text-sm font-semibold">
+                    <li class="flex"><a href="#"><i class="fa-solid fa-envelope"></i>:<span class="font-light"> PhronemaEduConsults@gmail.com</span></a></li>
+                    <li class="flex"><a href="#"><i class="fa-solid fa-phone"></i>:<span class="font-light"> 08030001000, 09012345678</span></a></li>
+                </ul>
+                <ul class="socials flex flex-col w-2/5 text-slate-500 text-sm 
+                 hover:cursor-pointer">
+                    <li class = "hover:text-stone-800 my-1 hover:-translate-y-1 hover:font-bold transition-all text-lg m-auto"><a href="www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li class = "hover:text-stone-800 my-1 hover:-translate-y-1 hover:font-bold transition-all text-lg m-auto"><a href="www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li class = "hover:text-stone-800 my-1 hover:-translate-y-1 hover:font-bold transition-all text-lg m-auto"><a href="www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li class = "hover:text-stone-800 my-1 hover:-translate-y-1 hover:font-bold transition-all text-lg m-auto"><a href="www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                
+                </ul>
+            </div>
+            <div class="copyright m-auto flex text-sm text-slate-600">
+                <i class="fa-sharp fa-regular fa-copyright m-auto"></i> <p class="mx-2">Purpple Dev</p>
+            </div>
+            
+        </div>
+    </footer>
+   
 
 
 

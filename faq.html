@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEC-FAQ page</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css2.css">
+    <script src="https://kit.fontawesome.com/6a6fe3d180.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="bg-[url('pics/teacher-students-4.jpg')] bg-cover bg-center bg-no-repeat h-screen">
+        <nav class="nav relative w-full z-10 sm:h-20 flex justify-between ">
+            <figure class="logo w-40 flex">
+                <a href="index.html" class = "flex"><img src="pics/PEC-new-logo-1.jpeg" alt="" class="w-full rounded"></a>
+                <span class="m-auto font-bold text-3xl ">Blog</span>
+            </figure>
+    
+            
+            <ul id="nav-list" class="navBar relative justify-between py-1 px-3 h-fit
+                font-semibold text-white w-4/5 hidden xl:flex md:flex sm:flex">
+                <button id="exitMenuBtn" onclick="closeMenu()" class="exitMenuBtn text-3xl bg-stone-800 rounded border border-wheat font-bold text-wheat w-fit py-2 px-3 absolute
+                 top-0 right-1 hover:bg-stone-900 sm:hidden md:hidden hover:animate-ping">&#9747</button>
+                 <li class="ml-3 bg-gray-900 text-center w-36 h-fit px-3 rounded hover:text-gray-500 cursor-pointer hover:transition-all
+                 hover:underline-offset-4"><a href="index.html">Home</a></li>
+                <li class="ml-3 bg-gray-900 text-center w-36 h-fit px-3 rounded hover:text-gray-500 cursor-pointer hover:transition-all
+                 hover:underline-offset-4"><a href="services.html">Services</a> </li>
+                
+                <li class="ml-3 bg-gray-900 text-center w-60 h-fit px-2 rounded hover:text-gray-500 cursor-pointer hover:transition-all
+                 hover:underline-offset-4"><a href="aboutUs.html">About Us</a></li>
+                <div class="sm:flex sm:flex-col flex-nowrap w-52">
+                    <li id="StudyAbroadNav" onmouseenter = "showSAdropDown()" onmouseleave="closeSAdropDown()" class="StudyAbroadNav ml-3 bg-gray-900 text-center w-52 lg:w-72 h-fit px-2 rounded hover:text-gray-500 cursor-pointer md:hover:transition-all
+                 "><a href="studyAbroad.html">Study Abroad</a></li>
+                 <ul onmouseenter="showSAdropDown()" onmouseleave ="closeSAdropDown()" class="studyAbroadDropDown hidden m-auto flex-col bg-stone-800 px-2 pt-3 pb-2 relative">
+                    <li class="my-2 border-b flex justify-between"><a href="#" class="mr-2">Visa Application</a>
+                    <select name="Visa-Application" id="" class="w-fit cursor-pointer justify-between text-sm font-light text-stone-800 bg-wheat">
+                        <option value="Student-Visa"><a href="#">Student Visa</a></option>
+                        <option value="Work-Visa"><a href="#">Work Visa</a></option>
+                        <option value="Tourist-Visa"><a href="#">Tourist Visa</a></option>
+                        <option value="Visit-Visa"><a href="#">Visit Visa</a></option>
+                    </select></li>
+                    <li class="my-2 border-b"><a href="#">Accomodation</a></li>
+                    <li class="my-2 border-b"><a href="#">Join a Study-group</a></li>
+                    <li class="my-2 border-b"><a href="#">Apply for scholarship</a></li>
+                    <li class="my-2 border-b flex justify-between"><a href="#">Examinations</a>
+                    <select name="Int-Exams" id="" class="w-fit cursor-pointer justify-between text-sm font-light text-stone-800 bg-wheat">
+                        <option value="IELTS"><a href="#">IELTS</a></option>
+                        <option value="CD-IELTS"><a href="#">CD-IELTS</a></option>
+                        <option value="TOEFL"><a href="#">TOEFL</a></option>
+                    </select></li>
+                 </ul>
+                </div>
+                <li class="ml-3 bg-gray-900 text-center w-36 h-fit px-3 rounded hover:text-gray-500 cursor-pointer hover:transition-all
+                 hover:underline-offset-4"><a href="blog.html">Blog</a></li>
+            </ul>
+           <div id="Harmburger-menu" onclick="openMenu()" class="MenuBtn flex p-2 md:hidden sm:block hover:animate-pulse hover:bg-milk text-stone-700 h-fit font-bold text-3xl ease-in-out duration-300 cursor-pointer">&#9778
+           </div>
+        </nav>
+        <div class="FAQ my-4 h-4/5">
+            <div class="faqContainer flex flex-col h-full">
+                <h3 class="m-auto text-4xl text-red-500 px-2 py-1 shadow-md font-bold border-b-2 mb-3 border-gray-400">F.A.Q</h3>
+                <ul class="m-auto text-lg text-rebeccapurple px-4 py-4 w-3/5 bg-lightwheat h-fit text-center justify-between">
+                    <li class="m-auto my-6 bg-wheat h-20 flex shadow-lg"><a href="#" class="m-auto">Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Itaque, earum!</a>
+                        <span class="m-auto text-red-500 text-sm hover:bg-gray-300 bg-lightwheat px-2 py-1"><a href="#">Response....</a></span>
+                    </li>
+                    <li class="m-auto my-6 bg-wheat h-20 flex shadow-lg"><a href="#" class="m-auto">Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Itaque, earum!</a>
+                        <span class="m-auto text-red-500 text-sm hover:bg-gray-300 bg-lightwheat px-2 py-1"><a href="#">Response....</a></span>
+                    </li>
+                    <li class="m-auto my-6 bg-wheat h-20 flex shadow-lg"><a href="#" class="m-auto">Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Itaque, earum!</a>
+                        <span class="m-auto text-red-500 text-sm hover:bg-gray-300 bg-lightwheat px-2 py-1"><a href="#">Response....</a></span>
+                    </li>
+                    <li class="m-auto my-6 bg-wheat h-20 flex shadow-lg"><a href="#" class="m-auto">Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Itaque, earum!</a>
+                        <span class="m-auto text-red-500 text-sm hover:bg-gray-300 bg-lightwheat px-2 py-1"><a href="#">Response....</a></span>
+                    </li>
+                    <li class="m-auto my-6 bg-wheat h-20 flex shadow-lg"><a href="#" class="m-auto">Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Itaque, earum!</a>
+                        <span class="m-auto text-red-500 text-sm hover:bg-gray-300 bg-lightwheat px-2 py-1"><a href="#">Response....</a></span>
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+    </header>
+    <footer class="">
+        <div class="testimonials my-5">
+            <h4 class="font-semibold text-lg mx-2 ">Here's what some of our users and partners have to say.</h4>
+            <div class="testimonies flex flex-col sm:flex-row overflow-scroll sm:overflow-auto">
+                <div class="flex-col flex mx-auto  w-2/4 sm:w1/3 textifier border-r text-center bg-white sm:mx-1 shadow-lg py-2 border-r-slate-200 
+                hover:bg-milk hover:cursor-pointer transition-all">
+                    <figure class="flex px-2 justify-between">
+                        <img src="pics/mic.jpg" class="w-10 rounded-full" alt="image of blog author">
+                    </figure>
+                    <p class="px-2">Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Iusto laborum exercitationem 
+                        earum nemo, 
+                    </p>
+                    <h4 class="sm:left-16 m-auto relative font-semibold">John Rhon</h4>
+                </div>
+                <div class="flex-col flex mx-auto border-r text-center w-2/4 sm:w-1/3 bg-white sm:mx-1 shadow-lg py-2 border-r-slate-200 
+                hover:bg-milk hover:cursor-pointer transition-all">
+                    <figure class="flex px-2 justify-between">
+                        <img src="pics/mic.jpg" class="w-10 rounded-full" alt="image of blog author">
+                    </figure>
+                    <p class="px-2">Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Iusto laborum exercitationem 
+                        earum nemo, 
+                    </p>
+                    <h4 class="sm:left-16 m-auto relative font-semibold">John Rhon</h4>
+                </div>
+                <div class="flex-col flex mx-auto border-r text-center w-2/4 sm:w-1/3 bg-white sm:mx-1 shadow-lg py-2 border-r-slate-200 
+                hover:bg-milk hover:cursor-pointer transition-all">
+                    <figure class="flex px-2 justify-between">
+                        <img src="pics/mic.jpg" class="w-10 rounded-full" alt="image of blog author">
+                    </figure>
+                    <p class="px-2">Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Iusto laborum exercitationem 
+                        earum nemo, 
+                    </p>
+                    <h4 class="sm:left-16 m-auto relative font-semibold">John Rhon</h4>
+                </div>
+            </div>
+        </div>
+        <div class="contact-us flex flex-col  justify-between mb-4">
+            <h3 class="sm:m-auto ml-2 mb-3 font-semibold">Contact Us</h3>
+            <div class="contact flex justify-between  w-5/6 m-auto">
+                <ul class="w-4/6 m-auto text-sm font-semibold">
+                    <li class="flex"><a href="#"><i class="fa-solid fa-envelope"></i>:<span class="font-light"> PhronemaEduConsults@gmail.com</span></a></li>
+                    <li class="flex"><a href="#"><i class="fa-solid fa-phone"></i>:<span class="font-light"> 08030001000, 09012345678</span></a></li>
+                </ul>
+                <ul class="socials flex flex-col w-2/5 text-slate-500 text-sm 
+                 hover:cursor-pointer">
+                    <li class = "hover:text-stone-800 my-1 hover:-translate-y-1 hover:font-bold transition-all text-lg m-auto"><a href="www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li class = "hover:text-stone-800 my-1 hover:-translate-y-1 hover:font-bold transition-all text-lg m-auto"><a href="www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li class = "hover:text-stone-800 my-1 hover:-translate-y-1 hover:font-bold transition-all text-lg m-auto"><a href="www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li class = "hover:text-stone-800 my-1 hover:-translate-y-1 hover:font-bold transition-all text-lg m-auto"><a href="www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                
+                </ul>
+            </div>
+            <div class="copyright m-auto flex text-sm text-slate-600">
+                <i class="fa-sharp fa-regular fa-copyright m-auto"></i> <p class="mx-2">Purpple Dev</p>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>

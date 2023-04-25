@@ -1,0 +1,45 @@
+/* .blogItem{
+    display: grid !important;
+    text-align: center;
+}
+.blogItem figure{
+    float: left;
+    margin: 5px;
+} */
+
+
+.blogItem1{
+    float: left;
+    /* display: flex; */
+}
+.blogItem1 figure{
+    width: 100px;
+    /* display: flex; */
+}
+.blogItem1 figure img{
+    width: 100%;
+    float: left;
+}
+.blogItem1 p{
+    background: red;
+    padding: 10px;
+    float: left;
+}
+/* .blogContainer{
+    background: url(pics/teacher-student-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    
+} */
+.blogPost-Intro{
+    
+    border-radius:0 35px ;
+
+}
+.About-us-img{
+    background-image: url(pics/teacher-high-5.jpg);
+    background-position: center;
+    background-size: cover;
+}
